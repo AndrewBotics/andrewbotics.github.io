@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Yoon - Software</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Andrew Yoon</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="builds.html" class="nav-link">Builds</a></li>
+                <li><a href="software.html" class="nav-link active">Software</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="research-intro">
+                <h1 class="section-title">Software Projects</h1>
+                <p style="font-size: 1.1rem; line-height: 1.8;">These are my software development projects, intended to fix real-world problems through automation (especially of my robots).</p>
+            </div>
+
+            <!-- Software Projects Section -->
+            <section class="section">
+                <h2 class="section-title">Featured Software</h2>
+                <div class="cards-grid">
+                    <!-- Software Project Card 1 -->
+                    <div class="card software-card">
+                        <div class="card-header">
+                            <div class="project-icon">💻</div>
+                            <div class="project-status completed">Completed</div>
+                        </div>
+                        <h3 class="card-title">OTHS MAO Website</h3>
+                        <p class="card-description">Sole developer of a website to house our school's Mu Alpha Theta chapter, also known as its Math Club.</p>
+                        
+                        <div class="tech-stack">
+                            <h4>Tech Stack:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag python">HTML</span>
+                                <span class="tech-tag react">CSS</span>
+                                <span class="tech-tag database">JS</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Aesthetic web development</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card-meta">
+                            <span class="project-date">2025</span>
+                            <span class="project-type">Website</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="https://othsmao.xyz" target="_blank" class="btn btn-secondary">Visit Here!</a>
+                        </div>
+                    </div>
+
+                    <!-- Software Project Placeholder -->
+                    <div class="card software-card placeholder-card">
+                        <div class="card-header">
+                            <div class="project-icon">🛠️</div>
+                            <div class="project-status placeholder">In Progress</div>
+                        </div>
+                        <h3 class="card-title">GRASPoids Software</h3>
+                        <p class="card-description">This software will accompany GRASPoids in producing an array of robots by calculating a mesh given a 3D object and assigning position values in real time.</p>
+                        
+                        <div class="tech-stack">
+                            <h4>Tech Stack:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag other">Onshape</span>
+                                <span class="tech-tag other">Raspberry Pi</span>
+                                <span class="tech-tag other">Python</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Mesh Generation</li>
+                                <li>Modular command distribution</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="card-meta">
+                            <span class="project-date">TBD</span>
+                            <span class="project-type">Control System</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary disabled">Coming Soon</a>
+                            <a href="#" class="btn btn-secondary disabled">TBD</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

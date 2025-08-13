@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Yoon - Builds</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Andrew Yoon</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="research.html" class="nav-link">Research</a></li>
+                <li><a href="builds.html" class="nav-link active">Builds</a></li>
+                <li><a href="software.html" class="nav-link">Software</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="research-intro">
+                <h1 class="section-title">Mechanical Builds & Projects</h1>
+                <p style="font-size: 1.1rem; line-height: 1.8;">These are my mechanical engineering builds and projects, ranging from competition robots to precision fixtures and innovative mechanical solutions.</p>
+            </div>
+
+            <!-- Builds Projects Section -->
+            <section class="section">
+                <h2 class="section-title">Featured Builds</h2>
+                <h2 class="section-title">Photos and Docs Coming Soon</h2>
+                <div class="cards-grid">
+                    <!-- Build Project Card 1 -->
+                    <div class="card build-card">
+                        <div class="card-header">
+                            <div class="project-icon">⚙️</div>
+                            <div class="project-status completed">Completed</div>
+                        </div>
+                        <h3 class="card-title">ESRA - Emotional Support Raising Android</h3>
+                        <p class="card-description">Custom-designed fully 3D-printed robotic dog designed to help people's self-esteem with a companion. Specifically designed to have better wire control and be able to collapse to minimize packing volume.</p>
+                        
+                        <div class="build-specs">
+                            <h4>Specifications:</h4>
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Material:</span>
+                                    <span class="spec-value">PLA</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Weight:</span>
+                                    <span class="spec-value">untested kg</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Dimensions (Active):</span>
+                                    <span class="spec-value">302×220×362mm</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Dimensions (Collapsed):</span>
+                                    <span class="spec-value">145×136×362mm</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="build-tools">
+                            <h4>Tools & Methods:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">CNC Machining</span>
+                                <span class="tool-tag">SolidWorks</span>
+                                <span class="tool-tag">FEA Analysis</span>
+                                <span class="tool-tag">TIG Welding</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-secondary">CAD Files</a>
+                        </div>
+                    </div>
+
+                    <!-- Build Project Placeholder -->
+                    <div class="card build-card placeholder-card">
+                        <div class="card-header">
+                            <div class="project-icon">🛠️</div>
+                            <div class="project-status placeholder">Placeholder</div>
+                        </div>
+                        <h3 class="card-title">Your Next Mechanical Build</h3>
+                        <p class="card-description">This is a placeholder card for your next mechanical engineering build or project. Replace this content with your actual project details.</p>
+                        
+                        <div class="build-specs">
+                            <h4>Specifications:</h4>
+                            <div class="spec-grid">
+                                <div class="spec-item">
+                                    <span class="spec-label">Spec 1:</span>
+                                    <span class="spec-value">Value 1</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Spec 2:</span>
+                                    <span class="spec-value">Value 2</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Spec 3:</span>
+                                    <span class="spec-value">Value 3</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Spec 4:</span>
+                                    <span class="spec-value">Value 4</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="build-tools">
+                            <h4>Tools & Methods:</h4>
+                            <div class="tool-tags">
+                                <span class="tool-tag">Method 1</span>
+                                <span class="tool-tag">Method 2</span>
+                                <span class="tool-tag">Method 3</span>
+                                <span class="tool-tag">Method 4</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-meta">
+                            <span class="project-date">TBD</span>
+                            <span class="project-type">Project Type</span>
+                            <span class="achievement">TBD</span>
+                        </div>
+                        
+                        <div class="card-actions">
+                            <a href="#" class="btn btn-primary disabled">Coming Soon</a>
+                            <a href="#" class="btn btn-secondary disabled">TBD</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
