@@ -579,7 +579,6 @@ main {
 
 /* About Section */
 .about-content {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
@@ -589,6 +588,7 @@ main {
 .about-text {
     font-size: 1.1rem;
     line-height: 1.8;
+    text-align: center;
 }
 
 .fun-facts {
@@ -855,4 +855,147 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+/* ADD these styles to your style.css file: */
+
+/* Update the existing .logo class: */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    gap: 0.8rem; /* Space between logo and text */
+}
+
+/* Logo image styles */
+.logo-img {
+    height: 45px; /* Adjust this to your preference */
+    width: auto; /* Maintains aspect ratio */
+    max-width: 60px; /* Prevents it from getting too wide */
+    transition: var(--transition);
+    border-radius: 5px; /* Optional: rounds corners slightly */
+}
+
+/* Logo text - you can hide this if you want logo-only */
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* Hover effect for the entire logo */
+.logo:hover .logo-img {
+    transform: scale(1.05);
+}
+
+.logo:hover .logo-text {
+    color: var(--secondary);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 35px; /* Smaller on mobile */
+        max-width: 50px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem; /* Smaller text on mobile */
+    }
+    
+    /* Optional: Hide text on very small screens, show only logo */
+    @media (max-width: 480px) {
+        .logo-text {
+            display: none; /* Uncomment this line if you want logo-only on small screens */
+        }
+    }
+}
+
+/* ADD these styles to your style.css file: */
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.profile-picture {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid var(--white);
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+    position: relative;
+    z-index: 2;
+}
+
+/* Decorative gradient border effect */
+.profile-decoration {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent), var(--primary));
+    z-index: 1;
+    animation: rotate 8s linear infinite;
+}
+
+/* Hover effects */
+.profile-picture:hover .profile-img {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-heavy);
+}
+
+.profile-picture:hover .profile-decoration {
+    animation-duration: 2s;
+}
+
+/* Rotating gradient animation */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Alternative simpler style (comment out the above .profile-decoration if using this): */
+/*
+.profile-img {
+    border: 5px solid;
+    border-image: linear-gradient(45deg, var(--primary), var(--secondary)) 1;
+    border-radius: 50%;
+}
+*/
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
 }
