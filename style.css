@@ -330,10 +330,8 @@ main {
     color: white;
 }
 
-.tech-tag.python { background: #3776ab; }
-.tech-tag.react { background: #61dafb; color: #000; }
-.tech-tag.cpp { background: #00599c; }
-.tech-tag.database { background: #336791; }
+.tech-tag.frontend { background: #61dafb; color: #000; }
+.tech-tag.backend { background: #00599c; }
 .tech-tag.other { background: var(--gray-dark); }
 
 .project-features {
