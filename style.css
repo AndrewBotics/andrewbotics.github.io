@@ -917,8 +917,16 @@ main {
 .profile-section {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     position: relative;
+}
+
+.gray-quote {
+    color: #676767;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
 }
 
 .profile-picture {
