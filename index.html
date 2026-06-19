@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>andrewbotics</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <main class="intro-board">
-        <p class="andrewbotics">Hi, I'm andrewbotics!</p>
-        <div class="intro-parent">
-            <div class="intro-child prof-child">
-                <p class="intro-child-text prof">If you are curious about my education, leadership roles, or business potential: please click here.</p>
-                <button class="prof-button">Professional Mode, please.</button>
-            </div>
-            <div class="intro-child whimsy-child">
-                <p class="intro-child-text whimsy-green">If you'd like to know more about what I do in my free time (or maybe you met me in Discord): please click here!</p>
-                <button class="whimsy-button whimsy-pink">Whimsy Mode!</button>
-            </div>
+    <div id="camera">
+        <div id="boards">
+            <section id="prof-board">
+                <p class="prof">Professional experience timeline will go here.</p>
+                <button class="prof-button back-button">Return to Main</button>
+            </section>
+            <main id="intro-board">
+                <p id="andrewbotics">Hi, I'm andrewbotics!</p>
+                <div class="intro-parent">
+                    <div class="intro-child prof-child">
+                        <p class="intro-child-text prof">If you're curious about my education, leadership roles, or business potential: please click here.</p>
+                        <button id="prof-btn-home" class="prof-button">Professional Mode, please.</button>
+                    </div>
+                    <div class="intro-child whimsy-child">
+                        <p class="intro-child-text whimsy-green">If you'd like to know more about what I do in my free time (or maybe you met me in Discord): please click here!</p>
+                        <button id="whimsy-btn-home" class="whimsy-button whimsy-pink">Whimsy Mode!</button>
+                    </div>
+                </div>
+                <p>the new site is still under maintenance, sorry if any features don't work as promised right now</p>
+            </main>
+            <section id="whimsy-board">
+                <p class="whimsy-green">Fun projects timeline will go here.</p>
+                <button class="whimsy-button whimsy-pink back-button">Return to Main</button>
+            </section>
         </div>
-        <p>the new site is still under maintenance, sorry if any features don't work as promised right now</p>
-    </main>
+    </div>
 </body>
 </html>
