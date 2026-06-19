@@ -3,143 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Yoon - Portfolio</title>
+    <title>andrewbotics</title>
     <link rel="stylesheet" href="style.css"/>
     <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <img src="assets/ay-logo.png" alt="Andrew Yoon Logo" class="logo-img">
-            <span class="logo-text">Andrew Yoon</span>
-            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="builds.html" class="nav-link">Builds</a></li>
-                <li><a href="software.html" class="nav-link">Software</a></li>
-                <li><a href="experience.html" class="nav-link">Experience</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Hello, I'm Andrew Yoon</h1>
-                <p>Roboticist | Researcher | Programmer | Social Good</p>
+    <main class="intro-board">
+        <p class="andrewbotics">Hi, I'm andrewbotics!</p>
+        <div class="intro-parent">
+            <div class="intro-child prof-child">
+                <p class="intro-child-text prof">If you are curious about my education, leadership roles, or business potential: please click here.</p>
+                <button class="prof-button">Professional Mode, please.</button>
+            </div>
+            <div class="intro-child whimsy-child">
+                <p class="intro-child-text whimsy-green">If you'd like to know more about what I do in my free time (or maybe you met me in Discord): please click here!</p>
+                <button class="whimsy-button whimsy-pink">Whimsy Mode!</button>
             </div>
         </div>
-
-
-        <div class="container">
-            <div class="profile-section">
-                <div class="profile-picture">
-                    <img src="assets/andrew-yoon.jpg" alt="Andrew Yoon" class="profile-img">
-                    <div class="profile-decoration"></div>
-                </div>
-            </div>
-            <p class="gray-quote">""</p>
-
-            <!-- About Section -->
-            <section class="section">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>I like to think about robotic computing problems and their applications in public service! If I couldn't be a roboticist, my next choice of career would be to be a superhero.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="section">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>Engineering & Design</h4>
-                        <div class="skill-list">
-                            <span class="skill">Onshape</span>
-                            <span class="skill">EasyEDA</span>
-                            <span class="skill">KiCad</span>
-                            <span class="skill">Fusion 360</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Programming</h4>
-                        <div class="skill-list">
-                            <span class="skill">Java</span>
-                            <span class="skill">CP CS</span>
-                            <span class="skill">HTML/CSS/JS (self-explanatory)</span>
-                            <span class="skill">Python</span>
-                            <span class="skill">Arduino</span>
-                            <span class="skill">Raspberry Pi</span>
-                            <span class="skill">Cloud-Based</span>
-                            <span class="skill">TypeScript</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Manufacturing</h4>
-                        <div class="skill-list">
-                            <span class="skill">3D Printing</span>
-                            <span class="skill">CNC Machining</span>
-                            <span class="skill">Assembly</span>
-                            <span class="skill">Actuator Design</span>
-                            <span class="skill">PCB Design</span>
-                            <span class="skill">PCB Fabrication</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Miscellaneous</h4>
-                        <div class="skill-list">
-                            <span class="skill">Leadership</span>
-                            <span class="skill">Competitive Math</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Featured Projects -->
-            <section class="section">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="cards-grid">
-                    <div class="card">
-                        <h3>Emotional Support Raising Android</h3>
-                        <p>Made a robotic dog from scratch using 20KG servos to act as an emotional service dog.</p>
-                        <div class="card-meta">
-                            <span class="tag">Hobbyist</span>
-                            <span class="tag">Robotics</span>
-                        </div>
-                        <div style="margin-top: 1rem;">
-                            <a href="builds.html" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>3D-Printed Microscope Design</h3>
-                        <p>Designed and researched a 3D-Printed Microscope with Professor Choongbae Park to reduce costs and increase modularity of microbiology projects, especially fluorescent imaging analysis.</p>
-                        <div class="card-meta">
-                            <span class="tag">Research</span>
-                            <span class="tag">CAD Design</span>
-                        </div>
-                        <div style="margin-top: 1rem;">
-                            <a href="research.html" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="fun-facts">
-                <h4>Notably Useful Facts About Me</h4>
-                <ul>
-                    <li>> I can name every single Pokemon and their traits by memory! *Still working on stats/height/weight.</li>
-                    <li>> I've beat some of the world's most difficult Pokemon challenge runs like EK, Unbound Insane, FR Omega, and Hardcore Radical Red!</li>
-                    <li>> I like to spend some of my free time designing artifacts from popular culture!</li>
-                    <li>> I love consuming science fiction, including series that relate to real world problems.</li>
-                    <li>> I enjoy trying the spiciest sauces from restaurants!</li>
-                    <li>> Though in engineering, I love animals of all kinds, especially pigeons and cats!</li>
-                    <li>> I like to end my sentences in exclamation marks!</li>
-                </ul>
-            </div>
-        </div>
+        <p>the new site is still under maintenance, sorry if any features don't work as promised right now</p>
     </main>
 </body>
 </html>
