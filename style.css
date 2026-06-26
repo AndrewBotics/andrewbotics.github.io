@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
 
 :root {
     --intro-white: #FFF;
     --intro-light-gray: #DDD;
     --intro-black: #111;
     --prof-white: #F0F4F8;
-    --prof-gray: #AEAEAE;
+    --prof-gray: #CECECE;
     --prof-black: #111111;
     --prof-blue: #002082;
     --whimsy-white: #EEE;
@@ -57,8 +57,7 @@ body.show-whimsy #boards {
     width: 100vw;
     height: 100vh;
     flex-shrink: 0;
-    text-align: center;
-    align-content: center;
+    overflow-y: auto;
 }
 
 #intro-board {
@@ -66,6 +65,8 @@ body.show-whimsy #boards {
     padding: 0;
     background: linear-gradient(to right, var(--prof-white), var(--whimsy-black));
     color: var(--intro-white);
+    align-content: center;
+    text-align: center;
 }
 
 #prof-board {
@@ -77,7 +78,7 @@ body.show-whimsy #boards {
 #whimsy-board {
     background-color: var(--whimsy-black);
     color: var(--whimsy-white);
-    font-family: 'Caveat';
+    font-family: 'Bitcount Single';
 }
 
 .intro-parent {
@@ -102,6 +103,14 @@ body.show-whimsy #boards {
     font-size: min(2vw, 1.25rem);
 }
 
+.prof-big {
+    font-size: min(2.5vw, 1.75rem);
+}
+
+.prof-bigger {
+    font-size: min(3vw, 2.25rem);
+}
+
 .prof-child {
     background-color: var(--prof-white);
     border: 1px solid var(--prof-blue);
@@ -116,10 +125,14 @@ body.show-whimsy #boards {
     background-color: var(--prof-gray);
 }
 
-.prof, .prof-child, .prof-button {
+.prof, .prof-child, .prof-button, .prof-skills, .prof-big, .prof-bigger {
     font-family: 'IBM Plex Mono';
     font-weight: 250;
     color: var(--prof-blue);
+}
+
+.prof-big, .prof-bigger {
+    font-weight: 400;
 }
 
 .whimsy-pink {
@@ -147,7 +160,15 @@ body.show-whimsy #boards {
 }
 
 .whimsy-pink, .whimsy-cyan, .whimsy-green {
+    font-size: min(2vw, 1.25rem);
+}
+
+.whimsy-big {
     font-size: min(2.5vw, 1.75rem);
+}
+
+.whimsy-bigger {
+    font-size: min(3vw, 2.25rem);
 }
 
 .whimsy-child {
@@ -158,7 +179,7 @@ body.show-whimsy #boards {
 }
 
 .whimsy-button {
-    font-size: min(2vw, 1.5rem);
+    font-size: min(2vw, 1.25rem);
     border: 1px solid white;
     box-shadow:
         inset 0 0 15px var(--whimsy-pink),
@@ -178,29 +199,73 @@ body.show-whimsy #boards {
         0 0 3px var(--whimsy-pink);
 }
 
-.whimsy-pink, .whimsy-cyan, .whimsy-green, .whimsy-child, .whimsy-button {
-    font-family: 'Caveat';
+.whimsy-pink, .whimsy-cyan, .whimsy-green, .whimsy-child, .whimsy-button, .whimsy-skills {
+    font-family: 'Bitcount Single';
     color: var(--whimsy-white);
 }
 
 .prof-button, .whimsy-button {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: min(0.8vw, 0.5rem) min(1.6vw, 1rem);
     margin: 0.5rem;
     text-align: center;
     align-content: center;
-    border-radius: 1.5rem;
+    border-radius: min(3vw, 2rem);
     cursor: pointer;
     background-color: transparent;
     transition: all 0.1s ease-out;
 }
 
-.timeline-content {
-    display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;
+#prof-about, #whimsy-about {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.back-btn {
-    margin-top: 2rem;
+#prof-about p, #whimsy-about p {
+    width: fit-content;
+    margin: 0.5rem;
+}
+
+.prof-skills, .whimsy-interests, .whimsy-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prof-skills p, .whimsy-interests p, .whimsy-skills p {
+    border-radius: 1.5rem;
+    padding: min(0.8vw, 0.5rem) min(1.6vw, 1rem);
+    font-size: min(2vw, 1.25rem);
+    margin: 0.25rem !important;
+}
+
+.prof-skills p {
+    border: 1px solid var(--prof-blue);
+}
+
+.whimsy-interests p {
+    border: 1px solid white;
+    box-shadow:
+        inset 0 0 15px var(--whimsy-cyan),
+        0 0 15px var(--whimsy-cyan);
+    text-shadow: 
+        0 0 0.5rem var(--whimsy-cyan),
+        0 0 1rem var(--whimsy-cyan),
+        0 0 1.5px var(--whimsy-cyan),
+        0 0 2px var(--whimsy-cyan);
+}
+
+.whimsy-skills p {
+    border: 1px solid white;
+    box-shadow:
+        inset 0 0 15px var(--whimsy-green),
+        0 0 15px var(--whimsy-green);
+    text-shadow: 
+        0 0 0.5rem var(--whimsy-green),
+        0 0 1rem var(--whimsy-green),
+        0 0 1.5px var(--whimsy-green),
+        0 0 2px var(--whimsy-green);
 }
